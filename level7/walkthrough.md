@@ -37,7 +37,8 @@ OFFSET   TYPE              VALUE
 08049928 R_386_JUMP_SLOT   puts
 0804992c R_386_JUMP_SLOT   __gmon_start__
 08049930 R_386_JUMP_SLOT   __libc_start_main
-08049934 R_386_JUMP_SLOT   fopen```
+08049934 R_386_JUMP_SLOT   fopen
+```
 
 On récupère ensuite l'adresse de la fonction `m()` avec gdb 
 ```sh
