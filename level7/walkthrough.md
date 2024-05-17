@@ -62,6 +62,7 @@ End of assembler dump.
 On connait désormais l'adresse à overwrite: `0x08049928` et l'adresse par laquelle on veut la remplacer: `0x080484f4`, ainsi que l'offset: `20`
 
 Notre payload sera donc: padding (20 characteres) + addresse GOT + adresse de `m()`
+
 L'adresse de `m()` sera donc dans le 2ème argument.
 
 ```sh
